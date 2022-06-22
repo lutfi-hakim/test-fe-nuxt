@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <Navigation/>
     <!-- Content -->
-    <div class=" content">
+    <div class="content">
       <!-- Content -->
       <nuxt/>
     </div>

@@ -1,69 +1,77 @@
 <template>
-    <div>
-        <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 footer-column">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <span class="footer-title">Product</span>
+<section>
+
+  <div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Tautan Cepat</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product 1</a>
+            <a class="nav-link" href="#">Cek Tarif Aja</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product 2</a>
+            <a class="nav-link" href="#">Kabar Buatmu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Plans & Prices</a>
+            <a class="nav-link" href="#">Manajemen Order</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Frequently asked questions</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 footer-column">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <span class="footer-title">Company</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Job postings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News and articles</a>
+            <a class="nav-link" href="#">Integrasi API</a>
           </li>
         </ul>
       </div>
-      <div class="col-md-4 footer-column">
+      <div class="col-md-3 footer-column">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <span class="footer-title">KiriminAja</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Syarat & Ketentuan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kebijakan Privasi</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Fakta & Pertanyaan</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-column">
         <ul class="nav flex-column">
           <li class="nav-item">
             <span class="footer-title">Contact & Support</span>
           </li>
           <li class="nav-item">
-            <span class="nav-link"><i class="fas fa-phone"></i>+47 45 80 80 80</span>
+            <span class="nav-link"><i class="fas fa-phone"></i>0274 8000 123</span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-comments"></i>Live chat</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>support@kiriminaja.com</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+            <a class="nav-link" href="#"><i class="fas fa-star"></i>Jl. Palagan Tentara Pelajar No. 30 KM 08, Mudal, Kelurahan Sariharjo, Kecamatan Ngaglik, Kabupaten Sleman, Provinsi Daerah Istimewa Yogyakarta</a>
           </li>
         </ul>
       </div>
+      <div class="col-md-3 footer-column">
+         <p class="text-white">Terdaftar di</p>
+      <img src="https://kiriminaja.com/assets/home-2/logo-kominfo.svg" alt="">
+      </div>
     </div>
 
-    <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
-    
+  
     <div class="row text-center">
       <div class="col-md-4 box">
-        <span class="copyright quick-links">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script>
+        <span class="copyright quick-links">Copyright &copy; 2022
         </span>
       </div>
       <div class="col-md-4 box">
@@ -75,12 +83,12 @@
           </li>
           <li class="list-inline-item">
             <a href="#">
-            <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f"></i>
           </a>
           </li>
           <li class="list-inline-item">
             <a href="#">
-            <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin-in"></i>
           </a>
           </li>
         </ul>
@@ -100,12 +108,13 @@
 </footer>
     </div>
 
+            </section>
 </template>
 
 
 <style>
 a {
-  color: #6c757d;
+  color: #fff;
 }
 
 a:hover {
@@ -120,7 +129,7 @@ a:hover {
 
 footer {
   padding: 2rem 0;
-  background-color: #212529;
+  background: #8c46cfa1;
 }
 
 .footer-column:not(:first-child) {
@@ -133,19 +142,19 @@ footer {
 }
 
 .footer-column {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 40px;
 }
 .footer-column .nav-item .nav-link {
-  padding: 0.1rem 0;
+  padding: 0.4rem 0;
 }
 .footer-column .nav-item span.nav-link {
-  color: #6c757d;
+  color: #fff;
 }
 .footer-column .nav-item span.footer-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
+  color: rgb(231, 227, 227);
 }
 .footer-column .nav-item .fas {
   margin-right: 0.5rem;
@@ -166,38 +175,38 @@ ul.social-buttons {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-  background-color: #fec503;
+  background: #fec503;
 }
 
 ul.social-buttons li a {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 40px;
   display: block;
   width: 40px;
-  height: 40px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   color: #fff;
   border-radius: 100%;
   outline: 0;
-  background-color: #1a1d20;
+  background: #1a1d20;
 }
 
 footer .quick-links {
-  font-size: 90%;
+  font-size: 14px;
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 
 .copyright {
-  color: white;
+  color: #fff;
 }
 
 .fa-ellipsis-h {
-  color: white;
+  color: #fff;
   padding: 2rem 0;
 }
+
 </style>

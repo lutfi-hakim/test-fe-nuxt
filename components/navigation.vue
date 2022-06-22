@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
@@ -22,7 +22,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Layanan
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -39,10 +39,10 @@
               <a class="nav-link" href="#">Lacak</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
+              <a class="nav-link daftar" href="#">Daftar</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="#">Masuk</a>
+              <a class="nav-link masuk" href="#">Masuk</a>
             </li>
           </ul>
         </div>
@@ -64,10 +64,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navbar{
+  padding: 16px 0;
+}
 .navbar-brand {
   span {
     font-size: 32px;
   }
+}
+.navbar-nav{
+  li a{
+    color: #8C46CF;
+    margin: 0 10px;
+    font-weight: 600;
+
+    &:hover{
+      font-weight: 600;
+      color: #175ABA;
+    }
+  }
+    .masuk, .daftar{
+      border: 1px solid #175ABA;
+      border-radius: 100px;
+      padding: 8px 24px;
+      &:hover{
+        background:#8C46CF ;
+        color: #fff;
+      }
+    }
 }
 .logo{
   width: 145px;

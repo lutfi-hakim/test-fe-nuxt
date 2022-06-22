@@ -1,5 +1,7 @@
 <template>
-    <div>
+<section>
+
+    <div class="container">
         <div class="playstore">
             <div class="playstore-left">
                 <img src="https://kiriminaja.com/assets/home-2/call-to-action.png" alt="image" class="hp">
@@ -14,9 +16,11 @@
             </div>
         </div>
     </div>
+                    </section>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
     .hp{
         width: 450px;
     }
@@ -24,6 +28,17 @@
         position: relative;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         margin: 80px 0;
+        .playstore-right{
+            span{
+                img{
+                    cursor: pointer;
+                    width: 120px;
+                }
+            }
+        }
+
     }
 </style>

@@ -1,52 +1,67 @@
 <template>
-    <div>
-      <div class="card">
-       <div class="card-body">
-          <h5>Form </h5>
+  <section>
+    <div class="container">
+    <div class="form-lacak">
+
+        <div class="row align-items-center">
+          <div class="col">
+            <h5>From <span>*</span></h5>
           <div class="input-group mb-3 input-group-sm">
-            <select class="form-select border-0 bg-warning text-white rounded-pill-start mw-max-c" id="inputGroupSelect01">
-              <option selected>All</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-              <input type="search" class="form-control hide-focus border-warning border-2 border-end-0" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-              <span class="input-group-text bg-white border-warning rounded-pill-end border-2 border-start-0 ps-1" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-warning)" stroke="var(--bs-warning)" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></span>
+           
+              <input type="search" class="form-control hide-focus border-info border-2 border-end-0 p-2" placeholder="Kecamatan Asal" aria-label="Username" aria-describedby="basic-addon1">
+             
           </div>
-          <h5>Destination</h5>
-          <div class="input-group mb-3 input-group-sm">
-            <select class="form-select border-0 bg-warning text-white rounded-pill-start mw-max-c" id="inputGroupSelect01">
-              <option selected>All</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-              <input type="search" class="form-control hide-focus border-warning border-2 border-end-0" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-              <span class="input-group-text bg-white border-warning rounded-pill-end border-2 border-start-0 ps-1" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-warning)" stroke="var(--bs-warning)" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></span>
           </div>
-          <h5>Berat (Gram)</h5>
+          <div class="col">
+           <h5>Destination <span>*</span></h5>
           <div class="input-group mb-3 input-group-sm">
-            <select class="form-select border-0 bg-warning text-white rounded-pill-start mw-max-c" id="inputGroupSelect01">
-              <option selected>All</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-              <input type="search" class="form-control hide-focus border-warning border-2 border-end-0" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-              <span class="input-group-text bg-white border-warning rounded-pill-end border-2 border-start-0 ps-1" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-warning)" stroke="var(--bs-warning)" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></span>
+            
+              <input type="search" class="form-control hide-focus border-info border-2 border-end-0 p-2" placeholder="Kecamatan Tujuan" aria-label="Username" aria-describedby="basic-addon1">
+             
+          </div>
+          </div>
+          <div class="col">
+           <h5>Berat (Gram) <span>*</span></h5>
+          <div class="input-group mb-3 input-group-sm">
+           
+              <input type="search" class="form-control hide-focus border-info border-2 border-end-0 p-2" placeholder="1000" aria-label="Username" aria-describedby="basic-addon1">
+             
+          </div>
+          </div>
+          <div class="col-1">
+
+            <button class="cek">Cek</button>
           </div>
         </div>
       </div>
+        
     </div>
+    </section>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+.form-lacak{
+
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  h5{
+    font-size: 16px;
+    color: #333;
+    span{
+      color: red;
+    }
+  }
+  .cek{
+    padding: 8px 22px;
+    color: #fff;
+    background: #8C46CF;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+  }
+}
 .hide-reveal > input[type="password"]::-ms-reveal {
   display: none;
 }

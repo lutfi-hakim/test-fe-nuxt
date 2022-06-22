@@ -4,7 +4,7 @@ module.exports = {
    */
 
   head: {
-    title: "test-nuxt",
+    title: "KiriminAJA",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
